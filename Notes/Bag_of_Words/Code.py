@@ -32,7 +32,7 @@ def get_counts(infilename):
 		
 	sorted_tuples=sorted(counts.items(),key=lambda item: item[1], reverse=True)
 	sorted_counts={k:v for k, v in sorted_tuples}
-	return counts 
+	return sorted_counts 
 
 filenames=os.listdir("/Users/maharnavsinghal/Library/Mobile Documents/com~apple~CloudDocs/Programming/HSL 1/Bag of Words/Files/")
 for filename in filenames:
